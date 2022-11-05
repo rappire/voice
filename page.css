@@ -1,0 +1,16 @@
+.control {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+.control_img {
+  width: 20px;
+  margin-right: 40px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.play_title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem 0.5rem;
+}

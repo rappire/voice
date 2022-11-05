@@ -1,0 +1,44 @@
+.background_image {
+  background-image: url("css/picture/mainpage.png");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.voice-match_button_box {
+  display: flex;
+  justify-content: center;
+}
+
+.voice-match_button {
+  border-radius: 50px;
+  background: rgb(2, 252, 158);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 252, 158, 1) 0%,
+    rgba(21, 214, 51, 1) 100%
+  );
+  padding: 1rem 3rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+.voice-match_button p {
+  font-size: 1.5rem;
+}
+
+.Filter {
+  padding: 3rem;
+}
+
+.Filter h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.Filter_list {
+  display: flex;
+  justify-content: center;
+}

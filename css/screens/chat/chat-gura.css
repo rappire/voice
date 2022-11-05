@@ -1,0 +1,29 @@
+@keyframes slide-right {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.chat-gura .message-row {
+  opacity: 0;
+}
+
+.chat-gura div:nth-of-type(2) {
+  animation: slide-right 0.7s linear forwards;
+}

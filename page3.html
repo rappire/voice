@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page1</title>
+  </head>
+  <body id="body">
+    <div class="top-box"></div>
+    <h1 class="screen-header__title" onclick="location.href='mainpage.html';">
+      뒤로
+    </h1>
+
+    <h1 class="play_title">원본오디오</h1>
+
+    <hr />
+    <div id="waveform1"></div>
+    <div class="control">
+      <img src="css/picture/play.png" id="playbtn1" class="control_img" />
+      <img src="css/picture/stop.png" id="stopbtn1" class="control_img" />
+    </div>
+
+    <hr />
+    <h1 class="play_title">변환오디오</h1>
+
+    <div id="waveform2"></div>
+    <div class="control">
+      <img src="css/picture/play.png" id="playbtn2" class="control_img" />
+      <img src="css/picture/stop.png" id="stopbtn2" class="control_img" />
+    </div>
+
+    <div id="no-mobile">
+      <span>Your screen is too big T.T</span>
+    </div>
+
+    <hr />
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var playbtn1 = document.getElementById("playbtn1");
+      var stopbtn1 = document.getElementById("stopbtn1");
+      var playbtn2 = document.getElementById("playbtn2");
+      var stopbtn2 = document.getElementById("stopbtn2");
+
+      var wavesurfer1 = WaveSurfer.create({
+        container: "#waveform1",
+        waveColor: "gray",
+        progressColor: "green",
+        height: 200,
+      });
+
+      var wavesurfer2 = WaveSurfer.create({
+        container: "#waveform2",
+        waveColor: "gray",
+        progressColor: "green",
+        height: 200,
+      });
+
+      wavesurfer1.load("css/audio/YWY_0.wav");
+      wavesurfer2.load("css/audio/YWY_0.wav");
+
+      playbtn1.onclick = function () {
+        wavesurfer1.playPause();
+      };
+      stopbtn1.onclick = function () {
+        wavesurfer1.stop();
+      };
+      playbtn2.onclick = function () {
+        wavesurfer2.playPause();
+      };
+      stopbtn2.onclick = function () {
+        wavesurfer2.stop();
+      };
+    </script>
+  </body>
+</html>

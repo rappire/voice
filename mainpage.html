@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Voice Match</title>
+  </head>
+  <body id="body" class="background_image1">
+    <h1 class="screen-header__title" onclick="location.href='index.html';">
+      뒤로
+    </h1>
+    <hr />
+    <header class="screen-header">
+      <h1 class="screen-header__title">[테스트 녹음입니다]</h1>
+      <p class="screen-header__text">
+        샘플 음원을 들어보고 마음에 드는 음원을 선택해 녹음 된 목소리를 원하는
+        목소리로 바꿔보세요
+      </p>
+    </header>
+
+    <main class="main-screen">
+      <h1 class="main-screen__title">신규 필터</h1>
+      <!-- 1 -->
+      <div class="user-component">
+        <div
+          class="user-component__column"
+          onclick="location.href='/page1.html';"
+        >
+          <img
+            src="https://static.miraheze.org/hololivewiki/thumb/c/c6/Shirakami_Fubuki_-_Portrait_01.png/360px-Shirakami_Fubuki_-_Portrait_01.png"
+            class="user-component__avatar user-component__avatar"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">오은영</h4>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <div class="playing" id="player1"></div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="user-component">
+        <div
+          class="user-component__column"
+          onclick="location.href='/page2.html';"
+        >
+          <img
+            src="https://static.miraheze.org/hololivewiki/thumb/c/ce/Kiryu_Coco_-_Portrait_01.png/290px-Kiryu_Coco_-_Portrait_01.png"
+            class="user-component__avatar user-component__avatar"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">우영우</h4>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <div class="playing" id="player2"></div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="user-component">
+        <div
+          class="user-component__column"
+          onclick="location.href='/page3.html';"
+        >
+          <img
+            src="https://static.miraheze.org/hololivewiki/thumb/6/69/Gawr_Gura_-_Portrait_01.png/360px-Gawr_Gura_-_Portrait_01.png"
+            class="user-component__avatar user-component__avatar"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Gawr Gura</h4>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <div class="playing" id="player3"></div>
+        </div>
+      </div>
+    </main>
+
+    <div id="no-mobile">
+      <span>Your screen is too big T.T</span>
+    </div>
+
+    <script>
+      src = "https://kit.fontawesome.com/6478f529f2.js";
+      crossorigin = "anonymous";
+    </script>
+    <script>
+      var player1 = document.getElementById("player1");
+      var player2 = document.getElementById("player2");
+      var player3 = document.getElementById("player3");
+
+      function playAudio1() {
+        var music = new Audio("css/audio/OPD_0.wav");
+        music.play();
+      }
+      function playAudio2() {
+        var music = new Audio("css/audio/YWY_0.wav");
+        music.play();
+      }
+      function playAudio3() {
+        var music = new Audio("css/audio/YWY_0.wav");
+        music.play();
+      }
+
+      player1.addEventListener("click", playAudio1);
+      player2.addEventListener("click", playAudio2);
+      player3.addEventListener("click", playAudio3);
+    </script>
+  </body>
+</html>
