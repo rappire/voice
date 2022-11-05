@@ -1,5 +1,5 @@
 .background_image {
-  background-image: url("css/picture/mainpage.png");
+  background-image: url("/css/picture/mainpage.png");
   background-position: center;
   background-size: cover;
   height: 100%;
