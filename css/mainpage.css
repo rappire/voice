@@ -154,7 +154,7 @@
 }
 
 .playing {
-  background-image: url("/css/picture/play.png");
+  background-image: url("/picture/play.png");
   background-position: center;
   background-size: cover;
   height: 40px;
