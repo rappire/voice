@@ -6,7 +6,6 @@
 /* Components */
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
-@import "components/screen-header.css";
 @import "components/user-component.css";
 @import "components/badge.css";
 @import "components/icon-row.css";
@@ -25,9 +24,9 @@
 @import "screens/chat/chat-gura.css";
 
 /* 돋거*/
-@import "/index.css";
-@import "/mainpage.css";
-@import "/page.css";
+@import "index.css";
+@import "mainpage.css";
+@import "page.css";
 body {
   background-color: #212121;
   color: white;
